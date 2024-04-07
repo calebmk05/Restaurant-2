@@ -1,0 +1,76 @@
+{% extends 'recipe/base.html' %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Highlights</h1>
+    <div class="card my-4 mx-auto" style="width: 400px;">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            {% load static %}
+            <video controls width="380">
+                <source src="{% static 'C:\Users\caleb\OneDrive\Desktop\Restaurant 2\recipesite\static\images\videos\cookingvideo.mp4' %}" type="video/mp4">
+            </video>
+            <p class="mt-2">Professional Cooking</p>
+        </div>
+    </div>
+
+    <h1>Featured Recipes</h1>
+    <div class="row mx-auto" style="width: 800px;">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'images/fishburger.jpg' %}" class="card-img-top" alt="Recipe 1">
+                <div class="card-body">
+                    <h5 class="card-title">Fish Burger</h5>
+                    <p class="card-text">Beer Battered Fish on Briosh Bun.</p>
+                    <a href="#" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'images/eggsol.jpg' %}" class="card-img-top" alt="Recipe 2">
+                <div class="card-body">
+                    <h5 class="card-title">Boiled egg</h5>
+                    <p class="card-text">Fresh Boiled Eggs With Toast Soldiers</p>
+                    <a href="#" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'images/soup.jpg' %}" class="card-img-top" alt="Recipe 3">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Noodle Soup</h5>
+                    <p class="card-text">Soup in a nice Chicken Broth with fresh pasta</p>
+                    <a href="#" class="btn btn-primary">View Recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Community Feedback</h1>
+    <div class="mx-auto" style="width: 800px;">
+        <div class="card my-4">
+            <div class="card-body">
+                <h5 class="card-title">Gordon Ramsay</h5>
+                <p class="card-text">Wide variety of items on this menu, and a very easy website to use.</p>
+            </div>
+        </div>
+
+        <div class="card my-4">
+            <div class="card-body">
+                <h5 class="card-title">Jamie Oliver</h5>
+                <p class="card-text">Exquist items and easy and clean website to navigate</p>
+            </div>
+        </div>
+
+        <div class="card my-4">
+            <div class="card-body">
+                <h5 class="card-title">Feedback 3</h5>
+                <p class="card-text">This is the third feedback card.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
